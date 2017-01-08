@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brian Zhang</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		
+		<link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+
+		<style>
+			body, html {
+				background: #fff;
+				padding: 0;
+				margin: 0;
+				/* ignasi */
+				/* background: url(http://i.imgur.com/ICxqqfW.png); */
+				/* swirl */
+				background: url(http://i.imgur.com/Apkfiq3.png);
+				/* seigaiha */
+				/* background: url(http://i.imgur.com/NtM87r4.png); */
+				/* treebark */
+				/* background: url(http://i.imgur.com/59EHFce.png); */
+				/* stardust */
+				/* background: url(http://i.imgur.com/dbhglnw.png); */
+				font-family: 'Oxygen', sans-serif;
+			}
+
+			.box-lol {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-lol img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-lol div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-lol div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+			
+			.box-uni {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-uni img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-uni div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-uni div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+
+			.box-gamer {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-gamer img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-gamer div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-gamer div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+
+			.box-percolation {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+
+
+				.box-percolation iframe {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-percolation div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-percolation div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+
+			.box-pong {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-pong canvas {
+					width: 400px;
+					height: 250px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-pong div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-pong div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+
+			.box-cuhacking {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-cuhacking img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+					background: black;
+				}
+
+				.box-cuhacking div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-cuhacking div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+
+			.box-enlight {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-enlight img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-enlight div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-enlight div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+			
+			.box-ieee {
+				width: 400px;
+				height: 450px;
+				margin: 30px auto;
+				background: #fff;
+				overflow: scroll;
+				font-weight: 300;
+				border: 1px solid rgba(0,0,0,.25);
+				box-shadow: 0 2px 6px rgba(0,0,0,.2);
+				border-radius: 3px;
+				position: relative;
+				line-height: 130%;
+			}
+				.box-ieee img {
+					width: 400px;
+					position: absolute;
+					top: 0;
+				}
+
+				.box-ieee div {
+					margin-top: 250px;
+					padding: 20px;
+					background: #f0f0f0;
+					position: relative;
+				}
+				
+					.box-ieee div h2 {
+						padding: 0;
+						margin: 0;
+						text-align: center;
+					}
+		</style>
+
+
+	<script> 
+		$(document).ready(function () {
+			$(".box-lol").scroll(function () {
+				s = $(".box-lol").scrollTop();
+				$(".box-lol img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-uni").scroll(function () {
+				s = $(".box-uni").scrollTop();
+				$(".box-uni img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-gamer").scroll(function () {
+				s = $(".box-gamer").scrollTop();
+				$(".box-gamer img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-percolation").scroll(function () {
+				s = $(".box-percolation").scrollTop();
+				$(".box-percolation iframe").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-pong").scroll(function () {
+				s = $(".box-pong").scrollTop();
+				$(".box-pong canvas").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-cuhacking").scroll(function () {
+				s = $(".box-cuhacking").scrollTop();
+				$(".box-cuhacking img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-enlight").scroll(function () {
+				s = $(".box-enlight").scrollTop();
+				$(".box-enlight img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+
+			$(".box-ieee").scroll(function () {
+				s = $(".box-ieee").scrollTop();
+				$(".box-ieee img").css("-webkit-transform", "translateY(" + (s/2) +  "px)");
+			})
+		})
+	</script>
+
+	<script>
+		var canvas;
+		var canvasContext;
+
+		var ballX = 200;
+		var ballY = 125;
+		var ballSpeedX = -10;
+		var ballSpeedY = 3;
+		var ballOutOfBounds = false;
+		var ballOutOfBoundsCount = 0;
+
+		var paddle1X = 10; //canvas width - 10 - PADDLE_WIDTH
+		var paddle2X = 380;
+		var paddle1Y = 200;
+		var paddle2Y = 0;
+
+		var player1Score = 0, player2Score = 0;
+
+		var winScreen = false;
+
+		const BALL_RADIUS = 5;
+		const PADDLE_WIDTH = 5;
+		const PADDLE_HEIGHT = 50;
+		const WIN = 10;
+		
+		//waits for widow to fully load before starting function call
+		window.onload = function() {
+			canvas = document.getElementById('gameCanvas');
+			canvasContext = canvas.getContext('2d');
+			
+			var framesPerSecond = 30;
+			setInterval(function() {
+				move();
+				draw();
+			}, 1000 / framesPerSecond);
+
+			canvas.addEventListener('mousemove',
+				function(e) {
+					var mousePos = calcMousePos(e);
+					paddle1Y = mousePos.y - PADDLE_HEIGHT / 2;
+				});
+
+			canvas.addEventListener('mousedown', handleMouseClick);
+		}
+
+		function move() {
+			if (winScreen) {
+				return;
+			}
+			compMove();
+
+			ballX += ballSpeedX;
+			ballY += ballSpeedY;
+
+			//if ball reaches width borders, reset to center
+			if (ballX > canvas.width) {
+				player1Score++;
+				reset();
+			}
+			if (ballX < 0) {
+				player2Score++;
+				reset();
+			}
+
+			if (ballOutOfBoundsCount >= 2) {
+				ballOutOfBounds = true;
+			} else {
+				ballOutOfBounds = false;
+			}
+			//if ball reachs height borders, bounce and change velocity by negation
+			if (ballOutOfBounds) {
+				ballOutOfBoundsCount = 0;
+			} else if (ballY > canvas.height - BALL_RADIUS || ballY < 0 + BALL_RADIUS) {
+				ballSpeedY = -ballSpeedY;
+				ballOutOfBoundsCount++;
+			} else {
+				ballOutOfBoundsCount = 0;
+			}
+			
+			if (ballOutOfBoundsCount >= 2) {
+				ballOutOfBounds = true;
+			} else {
+				ballOutOfBounds = false;
+			}
+
+			//bounce if ball hits paddle 1
+			if (ballX < paddle1X + PADDLE_WIDTH + BALL_RADIUS * 2) {
+				if (ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT/2) {
+					ballSpeedX = -ballSpeedX;
+					//if ball is going down and hits top half of paddle 1, change y direction
+					if (ballSpeedY > 0) ballSpeedY = -ballSpeedY;
+					var deltaY = ballY - (paddle1Y + PADDLE_HEIGHT/2);
+					ballSpeedY = deltaY * 0.35;
+				}
+				if (ballY >= paddle1Y + PADDLE_HEIGHT/2 && ballY < paddle1Y + PADDLE_HEIGHT) {
+					ballSpeedX = -ballSpeedX;
+					//if ball is going up and hits bottom half of paddle 1, change y direction
+					if (ballSpeedY < 0) ballSpeedY = -ballSpeedY;
+					var deltaY = ballY - (paddle1Y + PADDLE_HEIGHT/2);
+					ballSpeedY = deltaY * 0.35;
+				}
+			}
+
+			//bounce if ball hits paddle 2
+			if (ballX > paddle2X - BALL_RADIUS) {
+				if (ballY > paddle2Y && ballY < paddle2Y + PADDLE_HEIGHT/2) {
+					ballSpeedX = -ballSpeedX;
+					//if ball is going down and hits top half of paddle 2, change y direction
+					if (ballSpeedY > 0) ballSpeedY = -ballSpeedY;
+					var deltaY = ballY - (paddle2Y + PADDLE_HEIGHT/2);
+					ballSpeedY = deltaY * 0.35;
+				}
+				if (ballY >= paddle2Y + PADDLE_HEIGHT/2 && ballY < paddle2Y + PADDLE_HEIGHT) {
+					ballSpeedX = -ballSpeedX;
+					//if ball is going up and hits bottom half of paddle 2, change y direction
+					if (ballSpeedY < 0) ballSpeedY = -ballSpeedY;
+					var deltaY = ballY - (paddle2Y + PADDLE_HEIGHT/2);
+					ballSpeedY = deltaY * 0.35;
+				}
+			}
+		}
+
+		function reset() {
+			if (player1Score >= WIN || player2Score >= WIN) {
+				winScreen = true;
+			}
+			ballX = canvas.width / 2;
+			ballY = canvas.height / 2;
+			ballSpeedX = -ballSpeedX;
+			ballSpeedY = ballSpeedY * (Math.random() * 2 - 1 * 2);
+		}
+
+		//Drawing game shapes
+
+		function draw() {
+			//black canvas
+			drawRect(0,0,canvas.width,canvas.height,'black');
+			if (winScreen) {
+				canvasContext.fillStyle = 'white';
+				if (player1Score >= WIN) {
+					canvasContext.fillText("Player won!", 170, 80);
+				} else if (player2Score >= WIN) {
+					canvasContext.fillText("Computer won!", 170, 80);
+				}
+				canvasContext.fillText("Click to continue.", 165, 160);
+				return;
+			}
+
+			drawNet();
+			//left player paddle
+			drawRect(paddle1X,paddle1Y,PADDLE_WIDTH,PADDLE_HEIGHT,'white');
+			//right player paddle
+			drawRect(paddle2X,paddle2Y,PADDLE_WIDTH,PADDLE_HEIGHT,'white');
+			//ball
+			drawCircle(ballX,ballY,BALL_RADIUS,'white');
+			
+			canvasContext.fillText(player1Score,100,50);
+			canvasContext.fillText(player2Score,canvas.width-100,50);
+		}
+
+		function drawRect(x, y, width, height, color) {
+			canvasContext.fillStyle = color;
+			canvasContext.fillRect(x, y, width, height);
+		}
+
+		function drawCircle(x, y, r, color) {
+			canvasContext.fillStyle = color;
+			canvasContext.beginPath();
+			canvasContext.arc(x, y, r, 0, Math.PI*2, true);
+			canvasContext.fill();
+		}
+
+		function drawNet() {
+			for (var i = 0; i < canvas.height; i += canvas.height / 15) {
+				drawRect(canvas.width/2-1,i,2,canvas.height / 30,'white');
+			}
+		}
+
+		//Paddle movement
+
+		//paddle 1 movement (follows mouse)
+		function calcMousePos(e) {
+			var rect = canvas.getBoundingClientRect();
+			var root = document.documentElement;
+			var mouseX = e.clientX - rect.left - root.scrollLeft;
+			var mouseY = e.clientY - rect.top - root.scrollTop;
+			return {
+				x:mouseX,
+				y:mouseY
+			};
+		}
+
+		//paddle 2 movement (computer)
+		function compMove() {
+			if (paddle2Y + PADDLE_HEIGHT/2  < ballY - PADDLE_HEIGHT/4) {
+				paddle2Y += 6;
+			} else if (paddle2Y + PADDLE_HEIGHT/2 > ballY + PADDLE_HEIGHT/4) {
+				paddle2Y -= 6;
+			}
+			if (paddle2Y + PADDLE_HEIGHT > canvas.height) {
+				paddle2Y = canvas.height - PADDLE_HEIGHT;
+			}
+			if (paddle2Y < 0) {
+				paddle2Y = 0;
+			}
+		}
+
+		function handleMouseClick(e) {
+			if (winScreen) {
+				player1Score = 0;
+				player2Score = 0;
+				winScreen = false;
+			}
+		}
+	</script>
+
+	</head>
+
+	<body>
+
+		<section class="box-lol">
+			<img src="https://cybbet-static.s3.eu-central-1.amazonaws.com/images/news/812dbb98f79b591bc9360007f7f2b728.jpg" height="250px"/>
+
+			<div>
+				<h2>Rito Please</h2>
+				<p>Hi Riot! I'll first introduce myself as an avid League player. After going through various changes throughout the year, my summoner name finalized as Bosun which is another name for BoatSWAIN (caw caw - bad puns). I started playing early in Season 1 (or maybe even in BETA, my memory is hazy). The height of my playing career was during season 3 where I pushed myself up to the higher tiers of Diamond by creating a competitive environment competing versus my now challenger friend. Sometimes on the bus to and from school, my classmates and I would quiz each other on champion spell names, mana cost and base damage. My understanding of MOBA terms, mechanics and strategies are extensive and not only limited to League of Legends but other MOBAs as well. The next few cards contain general information about me as well as some recent things that I have worked on or am a part of.</p>
+			</div>
+		</section>
+
+		<section class="box-uni">
+			<img src="http://www.edgeip.com/images/FCK/Image/20165/SIC/04Carleton.jpg" height="250px"/>
+
+			<div>
+				<h2>Carleton University</h2>
+				<p>I'm formally called Brian Zhang, I am a second year Software Engineering Student at Carleton University. I've only recently truly opened my eyes to the vast world of coding. Recently, coding has become more than just a career, it has become my passion. I code and continue learning code during my spare time. I taper away at my computer so much so that I'm worried that my laptop's battery cycle count (1000 cycles * 10h) won't last a second year.</p>
+			</div>
+		</section>
+
+		<section class="box-gamer">
+			<img src="http://images.akamai.steamusercontent.com/ugc/360652321503765928/576E6364D09F92E98A2CDA8D7138FCF8429928BA/" height="250px"/>
+
+			<div>
+				<h2>Games</h2>
+				<p>I'm also an avid gamer having played many years of competitive games like League of Legends, DotA (SORRY!), DotA2 (SORRY x2!), CSGO, Bloodline Champions and even HoN. Competitive games sometimes prove quite stressful so I often like to waste away hours talking or casually farming in MMORPGS, I've frequented them all, Guild Wars, Guild Wars 2, WoW, Black Desert Online, Blade and Soul, Cabal Online and dabbled with many others. </p>
+
+				<p>For single player games, I love difficult challenges and compelling story telling. My favorite genres are definitely high and dark fantasy rpgs, preferably open world. The Soulsborne and Witcher series are my favorites. I also highly enjoy medieval games like Mount & Blade and am absolutely psyched for Bannerlord. For indie rpgs, I favor Pillars of Eternity, Ori and the Blind Forest, anything SuperGiant Games and Hyper Light Drifter, and highly looking forward to the upcoming Below - Death's Door.</p>
+				
+				<p>For strategy and city building, the older Settler games are absolute classics. So are the Sid Meier's, Age of Empires and Warcrafts.</p>
+
+				<p>For console and handhelds, besides the new FFXV, I enjoy the older ones more. Zelda and Fire Emblem contain some of my fondest memories, especially since the Black Knight in Fire Emblem Path of Radiance resembled Darth Vader in presence. Smash Bros definitely has to be on this list of mine. And since I didn't own a Xbox, I oftentimes went to my friend's place to play Halo and Jet Set Radio.</p>
+			</div>
+		</section>
+
+		<section class="box-percolation">
+			<iframe width="400px" height="250px" src="https://www.youtube.com/embed/SnhFvP3PnFs" frameborder="0" allowfullscreen></iframe>
+
+			<div>
+				<h2>Percolation</h2>
+				<p>Sort few hour project I worked on for Stanford's Algorithm and Data Structures I course. It uses a single WeightedQuickUnionUnionFind (WQUUF) and avoids backwash.</p>
+				<br/><br/>
+			</div>
+		</section>
+			
+		<section class="box-pong">
+			<canvas id="gameCanvas" width="400" height="250"></canvas> 	
+
+			<div>
+				<h2>Pong</h2>
+				<p>Decided to practice velocity, collision and canvas drawing in this quick HTML5 game of pong.</p>
+				<br/><br/><br/><br/>
+			</div>
+		</section>
+
+		<section class="box-cuhacking">
+			<img src="http://cuhacking.com/img/cuhackinglogo.png" height="250px"/>
+
+			<div>
+				<h2>CUHacking</h2>
+				<p>I am the Internal Director in charge of the catering and transportation of Carleton's 300 student MLH Hackathon that is happening on March 4-5.</p>
+				<br/><br/><br/>
+			</div>
+		</section>
+
+		<section class="box-enlight">
+			<img src="http://i1.wp.com/enlightme.ca/wp-content/uploads/2016/10/HACKference-Coverphoto.png?fit=1200%2C444&ssl=1" height="250px"/>
+
+			<div>
+				<h2>enLIGHT HACKference</h2>
+				<p>I participated in a entrepreneur half conference and half hackathon with got to talk to, listen to, and mingle with some of the brightest minds in the technology and business industries such as Kevin O'Leary, Alex Peh and many other venture capitalists.</p>
+				<br/><br/>
+			</div>
+		</section>
+
+		<section class="box-ieee">
+			<img src="http://ssci2016.cs.surrey.ac.uk/IEEE%202016_files/ieee.gif" height="250px"/>
+
+			<div>
+				<h2>IEEE</h2>
+				<p>I am the Executive Director of Acquisitions for Carleton University's IEEE Student Branch. Some things that I have helped out with in the past includes instructing students on branching and mergin large projects with 50 other users through GitHub using Git command lines, acquiring various sponsors and mentoring students and volunteers.</p>
+			</div>
+		</section>
+	</body>
+</html>
